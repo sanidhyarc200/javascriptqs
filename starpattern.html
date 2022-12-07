@@ -23,15 +23,18 @@
      * *
      * change line by /n
      **/
-    let n = 5;
+     let n = 5;
     let string = "";
-    for (let i = 0; i < n; i++) {
+    function pattern() {
+        for (let i = 0; i < n; i++) {
       
-        for (let j = 0; j < n - i ; j++) {
-            string += "*";
-           
-        }
-        string += "\n";
+      for (let j = 0; j < n - i ; j++) {
+          string += "*";
+         
+      }
+      string += "\n";
+  }
+    return string;
     }
-    console.log(string);
+    console.log(pattern())
 </script>
