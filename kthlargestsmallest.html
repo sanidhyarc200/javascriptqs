@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    /**
+     * sort the array 
+     * the element at k-1 index is our kth smallest element 
+     * and arr.length - k + 1 is our kth largest element
+     **/
+
+     const array = [2,1,4,3,6,5,7];
+     function findlargestandsmallest(array,K) {
+        array.sort()
+        return{
+            smallestElem: array[K-1],
+            largestElem: array.length - K + 1
+        }
+        
+     }
+     console.log(findlargestandsmallest(array,3))
+</script>
